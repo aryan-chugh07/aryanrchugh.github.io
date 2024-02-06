@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="blog_style-dak.css" id="style">
+    <script src="blog.js"></script>
+</head>
+<body>
+    <div id="main-area">
+        <div id="nav-head">
+            <h1 id="heading"></h1>
+            <div id="extras">
+                <div id="chat" onclick="showComments()">
+                    <img src="chat.png" height="20px" width="20px" id="i-chat">
+                    <p id="num-comments"></p>
+                </div>
+
+                <div id="likes" onclick="changeLikes()">
+                    <img src="heart.png" height="20px" width="20px" id="i-likes">
+                    <p id="num-likes"></p>
+                </div>
+            </div>
+        </div>
+        <hr width="90%">
+        <div id="content" style="position: relative;">
+            <p id="blog-entry"></p>
+
+            <div id="comments">
+                <div id="comment_show"></div>
+                <div id="send-comment">
+                    <textarea id="comm_type" width="80%" height="5%" rows="1" cols="40"></textarea>
+                    <button id="post" onclick="postComment()">
+                        <img src="send-message.png" width="20px" height="20px">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setLikes();
+        setComments();
+
+        let isDark = localStorage.getItem('isDark');
+        if(isDark == '0') {
+            document.getElementById('style').href = "blog_style2.css";
+        }else {
+            document.getElementById('style').href = "blog_style-dak.css";
+        }
+        loadPage();
+    </script>
+</body>
+</html>
