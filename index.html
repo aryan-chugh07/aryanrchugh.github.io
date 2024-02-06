@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="stylet.css" type="text/css" rel="stylesheet" id="style1">
+    <link href="style2.css" type="text/css" rel="stylesheet" id="style2">
+
+    <script src="https://kit.fontawesome.com/c49f8c95f8.js" crossorigin="anonymous"></script>
+    <title>aryan chugh</title>
+
+    <script>
+        function openGit() {
+            window.open("https://github.com/aryan-chugh07", "_blank");
+        }
+
+        function openMail() {
+            window.open("mailto:aryan.chugh@students.iiit.ac.in", "_blank");
+        }
+
+        function openInstagram() {
+            window.open("https://www.instagram.com/aryanrchugh/?next=%2F&hl=en", "_blank");
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="name-container" id="name-cont">
+            <p class="my-name">Aryan R Chugh</p>
+        </div>
+
+        <div class="link-container">
+            <button class="links" id="nabout-me">Meet Me</a>
+            <button class="links" id="nedu">Education</a>
+            <button class="links" id="nskills">Skills</a>
+            <button class="links" id="nachieve">Achievements</a>
+            <button class="links" id="nblogs">Blogs</a>
+        </div>
+    </nav>
+    
+    <div class="card" id="about">
+        <i class="fa-solid fa-user-tie fa-5x icons"></i>
+        
+        <p class="title-div">About Me</p>
+        <p class="content">
+            Explore where I hail from and what I am upto.
+        </p>
+
+        <div class="bottom-card">
+            <p class="plack_preview">MEET ME</p>
+        </div>
+    </div>
+
+    <div class="card" id="edu">
+        <i class="fa-solid fa-user-graduate fa-5x icons"></i>
+        <p class="title-div">Education</p>
+        <p class="content">
+            My educational background leading to IIITH.
+        </p>
+
+        <div class="bottom-card">
+            <p class="plack_preview">EDUCATION</p>
+        </div>
+    </div>
+
+    <div class="card" id="skills">
+        <i class="fa-solid fa-ranking-star fa-5x icons"></i>
+        <p class="title-div">My Skills</p>
+        <p class="content">
+            Amateur at life, by the way!
+        </p>
+
+        <div class="bottom-card">
+            <p class="plack_preview">SKILLS</p>
+        </div>
+    </div>
+
+    <div class="card" id="achieve">
+        <i class="fa-solid fa-medal fa-5x icons"></i>
+        <p class="title-div">Achievements</p>
+        <p class="content">
+            Just another Achievements Page!
+        </p>
+
+        <div class="bottom-card">
+            <p class="plack_preview">ACHIEVEMENTS</p>
+        </div>
+    </div>
+
+    <div class="card" id="blogs">
+        <i class="fa-solid fa-blog fa-5x icons"></i>
+        <p class="title-div">Blogs</p>
+        <p class="content">
+            A brief blog section!
+        </p>
+
+        <div class="bottom-card">
+            <p class="plack_preview">BLOGS</p>
+        </div>
+    </div>
+
+    <div class="left-bar" id="lbar">
+        <a href="openPdf.pdf" style="width: 100%; display: flex; justify-content: center; margin-top:5%; border-radius: 10px;" download>
+            <img id="profile_pic" src="my_pic.jpg" alt="I look like this"
+            width="35%" height="50%" style="border-radius: 40px; box-shadow: 10px 10px 4px gray;">
+        </a>
+        
+        <p class="desc">
+            Welcome to my digital sanctuary! Dive into a realm of endless 
+            possibilities where innovation and creativity converge. Join me on
+             this journey of exploration and empowerment.
+        </p>
+
+        <div id="social">
+            <button id="git" onclick="openGit()">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </button>
+            
+            <button id="email" onclick="openMail()">
+                <i class="fa-solid fa-envelope fa-2x"></i>
+            </button>
+
+            <button id="insta" onclick="openInstagram()">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </button>
+
+            <button id='btn-toggle' onclick="dark_light()" style="margin-top:1%; background-color: white; border-style: none; border-radius: 25px;">
+                <img src="night-mode.png" width="30px" height="30px" id="toggle" ></img>
+            </button>
+        </div>
+    </div>
+
+    <div id="over-display">
+        <div id="small-icons-top">
+            <div class="button-color">
+                <button id="back_view">
+                    <img src="back.png" alt="prev-preview" width="10px" height="10px">
+                </button>
+
+                <button id="next_view">
+                    <img src="next.png" alt="next-preview" width="10px" height= "10px">
+                </button>
+
+                <button id="close_view">
+                    <img src="close.png" alt="next-preview" width="10px" height="10px">
+                </button>            
+            </div>
+        </div>
+
+        <div id="about_preview">
+            <div id="contain1a">
+                <h2 id="head1">About Me</h2>
+                <p id="desc1">
+                    Hello! I'm Aryan R Chugh, a curious soul hailing from the vibrant lands of Punjab, 
+                    where every corner is painted with rich culture and a spirit of resilience. As I journey
+                    through life, I find myself now immersed in the dynamic environment of IIIT Hyderabad, 
+                    where the fusion of technology and innovation sparks endless possibilities.
+                    <br><br>
+                    My love for programming and web development began over 5 years ago, ignited by a desire 
+                    to create and innovate. It's been a thrilling journey of constant learning and growth, 
+                    where each line of code becomes a brushstroke in the canvas of my digital creations. From 
+                    crafting sleek user interfaces to delving into the depths of algorithmic complexities, 
+                    I've found solace and excitement in the ever-evolving world of technology.
+                    <br><br>
+                    Yet, my roots in Punjab have instilled in me a deep appreciation for exploration and 
+                    discovery beyond the digital realm. The vast fields and bustling streets of Punjab have 
+                    taught me the importance of embracing new perspectives and seizing every opportunity for 
+                    growth. Whether it's savoring the flavors of local cuisine or immersing myself in the 
+                    melodies of folk music, I find joy in experiencing the richness of diverse cultures 
+                    wherever I go.
+                    <br><br>
+                    Driven by an insatiable curiosity, I constantly seek out new prospects and challenges, 
+                    eager to expand my horizons and push the boundaries of what's possible. With a heart 
+                    fueled by passion and a mind open to endless exploration, I invite you to join me on this 
+                    exhilarating journey of discovery and innovation. Together, let's embark on a voyage where 
+                    the past meets the future, and where every moment is an opportunity to learn, create, and 
+                    inspire.
+                </p>
+            </div>
+
+            <div id="contain1b">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <td>Aryan R Chugh</td>
+                    </tr>
+                    <tr>
+                        <th>Age</th>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <th>Institute</th>
+                        <td>IIIT Hyderabad</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>aryan.chugh@students.iiit.ac.in</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="edu_preview">
+            <div id="contain2a-">
+                <h2 style="font-size: 25px; width: 100%; font-weight: bolder; text-shadow: 10px 5px 2px rgba(28, 37, 65, 0.2); color:#e1425a">
+                    Educational Background
+                </h2>
+                <div id="contain2a">
+                    <div class="tcell">
+                        <h3>2011-2021</h3>
+                        <p style="color:rgb(28, 25, 25); text-align: justify;">
+                            St. Stephen's School Chandigarh offered me a comprehensive education, nurturing
+                            both academic excellence and personal development, preparing me effectively 
+                            for the future.
+                        </p>
+                    </div>
+
+                    <div class="tcell">
+                        <h3>2021-2023</h3>
+                        <p style="color:rgb(28, 25, 25); text-align: justify;">
+                            Balancing JEE preparation alongside my studies at GMSSS-35 Chandigarh was a 
+                            challenging yet rewarding experience. While navigating rigorous academic demands, 
+                            I honed time management skills and developed a resilient work ethic to excel in both
+                            endeavors.
+                        </p>
+                    </div>
+
+                    <div class="tcell">
+                        <h3>2023-present</h3>
+                        <p style="color:rgb(28, 25, 25); text-align: justify;">
+                            In my second semester at IIIT Hyderabad, I've continued to thrive academically and engage actively
+                             in campus life, making meaningful connections and pursuing diverse interests 
+                             to foster my personal and professional growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contain2b">
+                <table>
+                    <tr>
+                        <th>ICSE X %</th>
+                        <td>99.2%</td>
+                    </tr>
+                    <tr>
+                        <th>CBSE XII %</th>
+                        <td>97.6%</td>
+                    </tr>
+                    <tr>
+                        <th>JEE Mains Rank</th>
+                        <td>56</td>
+                    </tr>
+                    <tr>
+                        <th>JEE Advance Rank</th>
+                        <td>2161</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="skill_preview">
+            <div id="contain3a">
+                <h2 id="head3">My Skills</h2>
+                <p id="desc3">
+                    Balancing a humble demeanor with my skills in coding and passion for
+                    sports, I bring a blend of abilities that I continually strive to 
+                    refine. In coding, I approach challenges with creativity and precision,
+                    seeking growth with every project. Similarly, in sports, I embrace 
+                    teamwork and resilience, constantly learning from each experience to 
+                    become a better athlete and individual. Through both pursuits, I 
+                    humbly aim to contribute positively to the world around me, always
+                    open to new opportunities for learning and improvement
+                </p>
+            </div>
+
+            <div id="contain3b">
+                <div id="coding_skills">
+                    <h2>Coding Skill Set</h2>
+
+                    <div id="_coding">
+                        <button class="item-skill">C</button>
+                        <button class="item-skill">C++</button>
+                        <button class="item-skill">Java</button>
+                        <button class="item-skill">Python</button>
+                        <button class="item-skill">HTML</button>
+                        <button class="item-skill">CSS</button>
+                        <button class="item-skill">JAVASCRIPT</button>
+                        <button class="item-skill">FLASK</button>
+                        <button class="item-skill">SQL</button>
+                        <button class="item-skill">PHP</button>
+                    </div>
+                </div>
+
+                <div id="sport_skills">
+                    <h2>Sport Skill Set</h2>
+                    <div  id="_sports">
+                        <button class="item-skill">CRICKET</button>
+                        <button class="item-skill">BADMINTON</button>
+                        <button class="item-skill">FOOTBALL</button>
+                        <button class="item-skill">TABLE TENNIS</button>
+                        <button class="item-skill">ATHLETICS</button>
+                        <button class="item-skill">CHESS</button>
+                        <button class="item-skill">CARROM</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="achieve_preview">
+            <h2>My Achievements</h2>
+
+            <div id="achieve_page">
+                <div class="achieve_element">
+                    <h3>AIR 56 in JEE MAINS</h3>
+                    <p>
+                        Attaining the 56th rank in JEE Mains is a significant milestone 
+                        that fills me with gratitude and humility. It reflects the 
+                        dedication and perseverance I've poured into my studies, fueling 
+                        my resolve to pursue excellence further.
+                    </p>
+                </div>
+                <div class="achieve_element">
+                    <h3>Qualified IOQC</h3>
+                    <p>Securing a qualification in the Indian Olympiad Qualifier in
+                        Chemistry (IOQC) is a proud accomplishment, reflecting my dedication
+                         and passion for the subject. This achievement motivates me to further 
+                         explore the captivating world of chemistry with renewed enthusiasm.</p>
+                </div>
+                <div class="achieve_element">
+                    <h3>Qualified IOQM</h3>
+                    <p>
+                        Qualifying in the Indian Olympiad Qualifier in Mathematics (IOQM) humbly 
+                        acknowledges my dedication and passion for the subject. This achievement 
+                        inspires me to further explore the depths of mathematics with gratitude 
+                        and a thirst for continuous learning.
+                    </p>
+                </div>
+                <div class="achieve_element">
+                    <h3>Numerous Cricketing Achievements</h3>
+                    <p>                    
+                        I've been fortunate to have earned numerous medals and 
+                        trophies throughout my school years as a cricketer. These 
+                        accolades stand as a testament to the dedication and teamwork 
+                        that I've embraced on the cricket field. Each victory serves as a 
+                        reminder of the invaluable lessons learned through sportsmanship, 
+                        perseverance, and camaraderie.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="blog_preview">
+            <h2>Some Blogs</h2>
+
+            <div id="blog_section">
+                <div class="blog_element" id="blog1">
+                    <img src="cosmos.jpg" alt="blog-intro" width="30%" height="30%">
+                    <h3>A Journey to the Cosmos</h3>             
+                </div>
+                <div class="blog_element" id="blog2">
+                    <img src="prog.jpeg" alt="blog-intro" width="30%" height="30%">
+                    <h3>The Craft of Programming</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js-support-index.js"></script>
+    <script>
+        localStorage.setItem('isDark', 0);
+    </script>
+</body>
+</html>

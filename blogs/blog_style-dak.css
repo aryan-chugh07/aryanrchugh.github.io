@@ -1,0 +1,251 @@
+#main-area {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    border-width: 3px;
+    border-color: black;
+    box-shadow: 20px 20px 10px black;
+
+    background-color: rgb(0, 0, 79);
+    color: white;
+}
+
+body {
+    background-color: #DEDEDE;
+}
+
+#nav-head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#extras {
+    width: 40%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#chat {
+    width: 15%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 3%;
+
+    color: black;
+    background-color: white;
+}
+#chat img {
+    margin : 5%;
+}
+
+#likes {
+    width: 15%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 3%;
+    color: black;
+
+    background-color: white;
+}
+
+#likes img {
+    margin : 5%;
+}
+
+#nav-head h1 {
+    font-style: italic;
+    font-size: 24px;
+    padding: 1%;
+    padding-left: 5%;
+    box-sizing: border-box;
+
+    width:60%;
+}
+
+hr {
+    border: 2px solid orange;
+}
+
+#content {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+}
+
+#content:hover {
+    overflow-y: auto;
+}
+
+#comments {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-right: 1%;
+    box-sizing: border-box;
+}
+
+#comment_show {
+    width: 100%;
+    height: 80%;
+    background-color: rgb(27, 24, 24);
+    margin-top: 8%;
+    overflow-y: auto;
+}
+
+#send-comment {
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#send-comment textarea {
+    margin-right: 4%;
+    padding: 3%;
+    box-sizing: border-box;
+    height: 2%;
+}
+
+#send-comment #post {
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2%;
+}
+
+#blog-entry {
+    padding-left: 2%;
+    padding-right: 2%;
+
+    width: 95%;
+    margin-left: 2.5%;
+    box-sizing: border-box;
+
+    overflow-y: hidden;
+
+    text-align: justify;
+}
+
+#blog-entry:hover {
+    overflow-y: auto;
+}
+
+.dum_comm {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.dum_comm h3 {
+    font-style: italic;
+    font-size: 18px;
+    text-align: left;
+    width: 90%;
+    background-color: gray;
+    margin: 0%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    color: white;
+}
+
+.dum_comm p {
+    font-size: 12px;
+    text-align: justify;
+    width: 90%;
+    position: relative;
+    background-color: gray;
+    margin: 0%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5px;
+
+    color: white;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    #main-area {
+        width: 95%;
+        top: 2%;
+        left: 2%;
+    }
+    
+    #nav-head h1 {
+        font-size: 20px;
+    }
+    
+    #comments {
+        position: absolute;
+
+        top: 0%;
+        right:2%;
+        width: 95%;
+        z-index: 5;
+        margin-right: 0;
+    }
+
+    #blog-entry {
+        margin-top: 10%;
+    }
+
+    #send-comment {
+        width: 100%;
+        right: 0;
+    }
+
+    .dum_comm h3 {
+        font-size: 16px;
+    }
+
+    .dum_comm p {
+        font-size: 10px;
+    }
+}
