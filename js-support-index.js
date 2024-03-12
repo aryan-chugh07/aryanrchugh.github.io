@@ -215,12 +215,12 @@ let btnBlog1 = document.getElementById('blog1');
 let btnBlog2 = document.getElementById('blog2');
 btnBlog1.addEventListener('click', function() {
     localStorage.setItem('last-viewed', 'blog1');
-    window.open('/blog_index.html', '_blank');
+    window.open('./blog_index.html', '_blank');
 });
 
 btnBlog2.addEventListener('click', function() {
     localStorage.setItem('last-viewed', 'blog2');
-    window.open('/blog_index.html', '_blank');
+    window.open('./blog_index.html', '_blank');
 });
 
 
